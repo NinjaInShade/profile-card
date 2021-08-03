@@ -54,7 +54,15 @@
 }
 
 .card-stats {
-  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 25px 40px;
+  width: 100%;
+
+  /* Max widths accounts for the 40px padding on both sides */
+  max-width: calc(250px + (40px * 2));
 }
 
 .card-stat {
@@ -62,10 +70,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.card-stat:nth-child(2) {
-  margin: 0 50px;
 }
 
 .card-stat-num {
