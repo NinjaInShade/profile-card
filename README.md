@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-<!-- - Solution URL: (https://www.frontendmentor.io/solutions/responsive-cards-with-flexbox-and-media-queries-css-vars-UGhgrDQ2E) -->
-<!-- - Live Site URL: (https://lm-3col-preview-card.netlify.app/) -->
+- Solution URL: (https://www.frontendmentor.io/solutions/responsive-profile-card-d5wUVm3-A)
+- Live Site URL: (https://lm-profile-card.netlify.app/)
 
 ## My process
 
@@ -41,7 +41,22 @@ Users should be able to:
 
 ### What I learned
 
-Not finished yet
+I made a slight border around the profile card image for the first time. At first I tried going with a padding and background approach.
+
+```css
+.card-profile-img {
+  background: #fff;
+  padding: 5px;
+}
+```
+
+I found out quick enough this did not work, and found out that I completely overcomplicated it and could've used a border - this did mean I had to remove the block display which I was using to center the img, but that was fixed by making the main content of the card a flexbox layout vertically.
+
+```css
+.card-profile-img {
+  border: 5px solid #fff;
+}
+```
 
 ## Author
 
